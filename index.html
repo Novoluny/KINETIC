@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>KINETIC — студия персональных тренировок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="main-header">
+  <div class="container header__inner">
+
+    <a href="#" class="logo">
+      <div class="logo__icon">K</div>
+      <div class="logo__text">
+        <span class="logo__title">KINETIC</span>
+        <span class="logo__subtitle">СИСТЕМА ТЕЛА</span>
+      </div>
+    </a>
+
+    <nav class="nav" id="main-nav">
+      <a href="#programs" class="nav__link">Программы</a>
+      <a href="#process" class="nav__link">Как проходит</a>
+      <a href="#coach" class="nav__link">Тренер</a>
+      <a href="#pricing" class="nav__link">Стоимость</a>
+      <a href="#faq" class="nav__link">Вопросы</a>
+      <a href="#booking" class="nav__link nav__cta">Записаться</a>
+    </nav>
+
+    <a href="#booking" class="btn btn--primary btn--sm header__btn">Записаться</a>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Тренировки, после которых <mark class="highlight">хочется прийти ещё</mark>
+          </h1>
+          <p class="hero__text">
+            Камерная студия на 6 человек в день. Один тренер, одна программа — твоя. Без толпы, музыки на полную и случайных упражнений.
+          </p>
+          <div class="hero__actions">
+            <a href="#booking" class="btn btn--primary">Пробное занятие →</a>
+            <a href="#pricing" class="btn btn--outline">Цены</a>
+          </div>
+        </div>
+
+        <div class="bento">
+          <div class="bento__card bento__card--progress">
+            <span class="bento__label">Средний прогресс клиентов за 3 месяца</span>
+            <b class="bento__value">+32%</b>
+            <div class="bento__ring"></div>
+          </div>
+          <div class="bento__card bento__card--accent">
+            <span class="bento__label">Человек в зале одновременно</span>
+            <b class="bento__value">≤ 2</b>
+          </div>
+          <div class="bento__card">
+            <span class="bento__label">Лет практики</span>
+            <b class="bento__value">9</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">СИЛА • ТЕХНИКА • ВЫНОСЛИВОСТЬ • МОБИЛЬНОСТЬ • РЕЖИМ • СИЛА • ТЕХНИКА • ВЫНОСЛИВОСТЬ • МОБИЛЬНОСТЬ • РЕЖИМ • СИЛА • ТЕХНИКА • ВЫНОСЛИВОСТЬ • МОБИЛЬНОСТЬ • РЕЖИМ •&nbsp;</div>
+        <div class="marquee__group">СИЛА • ТЕХНИКА • ВЫНОСЛИВОСТЬ • МОБИЛЬНОСТЬ • РЕЖИМ • СИЛА • ТЕХНИКА • ВЫНОСЛИВОСТЬ • МОБИЛЬНОСТЬ • РЕЖИМ • СИЛА • ТЕХНИКА • ВЫНОСЛИВОСТЬ • МОБИЛЬНОСТЬ • РЕЖИМ •&nbsp;</div>
+      </div>
+    </div>
+
+    <!-- ПРОГРАММЫ -->
+    <section class="section" id="programs">
+      <div class="container">
+        <h2 class="section__title">Выбери направление</h2>
+        <p class="section__lead">
+          Программы можно комбинировать: тренер соберёт план под цель и текущую форму.
+        </p>
+        
+        <div class="tabs" id="program-tabs"></div>
+        <div class="program-card reveal" id="program-content"></div>
+      </div>
+    </section>
+
+    <!-- КАК ПРОХОДИТ РАБОТА -->
+    <section class="section" id="process">
+      <div class="container">
+        <h2 class="section__title">Как проходит работа</h2>
+        
+        <div class="steps reveal">
+          <div class="step">
+            <h3 class="step__title">Знакомство</h3>
+            <p class="step__text">Разговор о целях, травмах и привычках. Замеры и тест базовых движений.</p>
+          </div>
+          <div class="step">
+            <h3 class="step__title">План</h3>
+            <p class="step__text">Составляем программу на 4–6 недель с понятными метриками.</p>
+          </div>
+          <div class="step">
+            <h3 class="step__title">Тренировки</h3>
+            <p class="step__text">Работаем 1 на 1: техника, нагрузка, контроль самочувствия.</p>
+          </div>
+          <div class="step">
+            <h3 class="step__title">Итоги</h3>
+            <p class="step__text">Каждый месяц пересматриваем результаты и обновляем план.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ТРЕНЕР -->
+    <section class="section section--dark" id="coach">
+      <div class="container coach">
+        <div class="coach__photo">
+          <img src="images/coach.jpg" alt="Тренер студии KINETIC" width="1000" height="1000" loading="lazy">
+        </div>
+        <div class="coach__info">
+          <h2 class="section__title">Привет, я Салават</h2>
+          <p class="section__lead">
+            Сертифицированный тренер по силовой подготовке. Работал в больших клубах и ушёл в камерный формат, чтобы уделять каждому клиенту максимум внимания.
+          </p>
+          <div class="coach__stats">
+            <div class="stat">
+              <b class="stat__value" data-count="9">0</b>
+              <span class="stat__label">лет опыта</span>
+            </div>
+            <div class="stat">
+              <b class="stat__value" data-count="420">0</b>
+              <span class="stat__label">клиентов</span>
+            </div>
+            <div class="stat">
+              <b class="stat__value" data-count="6">0</b>
+              <span class="stat__label">сертификатов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- СТОИМОСТЬ (ТАРИФЫ) -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="pricing__header">
+          <h2 class="section__title">Выбери свой <span class="text-accent">формат</span></h2>
+          <p class="section__lead">Индивидуальный подход и закрепленное время</p>
+        </div>
+        
+        <!-- Переключатель месяцев -->
+        <div class="pricing__tabs">
+          <button class="pricing__tab is-active" data-months="1">1 месяц</button>
+          <button class="pricing__tab" data-months="6">6 месяцев</button>
+          <button class="pricing__tab" data-months="12">12 месяцев</button>
+        </div>
+
+        <!-- Карточки тарифов -->
+        <div class="pricing__grid">
+          
+          <div class="price-card">
+            <div class="price-card__header">
+              <h3 class="price-card__title">Базовый</h3>
+              <p class="price-card__desc">1 занятие в нед / 4 в мес.</p>
+            </div>
+            <div class="price-card__price">
+              <span class="price-card__value">18 000 ₽</span>
+              <span class="price-card__per">4 500 ₽ / занятие</span>
+            </div>
+            <ul class="price-card__features">
+              <li>Перенос/накопление: до 1 раза в месяц</li>
+              <li>Персональное время</li>
+              <li>Анализ формы и план</li>
+            </ul>
+            <a href="#booking" class="btn btn--outline btn--block">Выбрать</a>
+          </div>
+
+          <div class="price-card price-card--featured">
+            <div class="price-card__badge">Идеальный баланс</div>
+            <div class="price-card__header">
+              <h3 class="price-card__title text-accent">Оптима</h3>
+              <p class="price-card__desc">2 занятия в нед / 8 в мес.</p>
+            </div>
+            <div class="price-card__price">
+              <span class="price-card__value">32 000 ₽</span>
+              <span class="price-card__per">4 000 ₽ / занятие</span>
+            </div>
+            <ul class="price-card__features">
+              <li>Перенос/накопление: до 2 раз в месяц</li>
+              <li>Персональное время</li>
+              <li>Анализ формы и план</li>
+            </ul>
+            <a href="#booking" class="btn btn--primary btn--block">Выбрать</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card__header">
+              <h3 class="price-card__title">Максимум</h3>
+              <p class="price-card__desc">3 занятия в нед / 12 в мес.</p>
+            </div>
+            <div class="price-card__price">
+              <span class="price-card__value">45 000 ₽</span>
+              <span class="price-card__per">3 750 ₽ / занятие</span>
+            </div>
+            <ul class="price-card__features">
+              <li>Перенос/накопление: до 3 раз в месяц</li>
+              <li>Персональное время</li>
+              <li>Анализ формы и план</li>
+            </ul>
+            <a href="#booking" class="btn btn--outline btn--block">Выбрать</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container" style="margin-bottom: 24px;">
+        <h2 class="section__title">Атмосфера студии</h2>
+      </div>
+      <div class="gallery-wrapper">
+        <div class="gallery-track" id="gallery-track">
+        </div>
+      </div>
+    </section>
+
+    <!-- ЗАПИСЬ -->
+    <section class="section section--accent" id="booking">
+      <div class="container">
+        <h2 class="section__title">Запись на пробное</h2>
+        <p class="section__lead">
+          Выбери день и время, остальное решим при знакомстве. Первое занятие — 30 минут, бесплатно.
+        </p>
+        
+        <div class="booking">
+          <div class="booking__schedule">
+            <label class="form-label">День</label>
+            <div class="days" id="day-selector"></div>
+            
+            <label class="form-label">Время</label>
+            <div class="times" id="time-selector"></div>
+          </div>
+          
+          <form class="booking__form" id="booking-form" novalidate>
+            <label class="form-label">Контакты</label>
+            <input type="text" name="name" placeholder="Имя" autocomplete="name" class="input">
+            <input type="tel" name="phone" placeholder="Телефон" autocomplete="tel" class="input">
+            <button class="btn btn--primary btn--block" type="submit">Отправить</button>
+            <div id="form-message" role="status" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section__title">Частые вопросы</h2>
+        
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Нужна ли подготовка?</span>
+              <div class="faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                <p>Нет. Начинаем с вашего уровня, даже если вы не тренировались несколько лет.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Что взять с собой?</span>
+              <div class="faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                <p>Удобную форму и воду. Полотенца и инвентарь есть в студии.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Можно ли перенести занятие?</span>
+              <div class="faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                <p>Да, предупредите за 12 часов. Перенос не сгорает.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Помогаете с питанием?</span>
+              <div class="faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                <p>Даю базовые рекомендации по рациону. Диагнозы и лечение — к врачу.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="map-container">
+      <div class="map-placeholder">
+        <iframe style="border: none;" width="100%" height="100%" src="https://platform.2gis.ru/api/map-constructor/widget?id=2d5f9092-2a72-4704-8e47-39c321d97653" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe>
+      </div>
+    </div>
+
+    <div class="footer__content">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="logo">
+              <div class="logo__icon">K</div>
+              <div class="logo__text">
+                <span class="logo__title">ЗА ЗДОРОВЫЙ АТЛЕТИЗМ</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="social-btn">Telegram</a>
+            <a href="#" class="social-btn">YouTube</a>
+            <a href="#" class="social-btn">Вконтакте</a>
+            <a href="#" class="social-btn">Почта</a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__legal">
+            <p>ИП Суляев Салават (демо)</p>
+            <p>ИНН 000000000 &nbsp; ОГРНИП 000000000000000</p>
+            <p>Оператор персональных данных &nbsp; Рег. № 00-00-000</p>
+          </div>
+          <div class="footer__links">
+            <a href="#">Правовая информация</a>
+            <a href="#">Политика обработки персональных данных</a>
+            <button class="cookie-btn">Настройки cookie</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- ЛАЙТБОКС (модальное окно для галереи) -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__backdrop"></div>
+    
+    <button class="lightbox__close" aria-label="Закрыть">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+
+    <button class="lightbox__arrow lightbox__arrow--prev" aria-label="Предыдущее фото">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+
+    <div class="lightbox__content">
+      <img src="" alt="Просмотр фото" class="lightbox__img" id="lightbox-img">
+    </div>
+
+    <button class="lightbox__arrow lightbox__arrow--next" aria-label="Следующее фото">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- ОКНО УСПЕШНОЙ ЗАПИСИ -->
+<div class="modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal__backdrop"></div>
+  <div class="modal__box">
+    <div class="modal__icon">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <h3 class="modal__title" id="modal-title">Готово, <span id="modal-name"></span>!</h3>
+    <p class="modal__text">Ждём вас <b id="modal-date"></b> в <b id="modal-time"></b></p>
+    <button class="btn btn--primary btn--block" id="modal-close" type="button">Отлично</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
